@@ -14,6 +14,7 @@
     --White-Smoke: #f3f3f3;
     --Titanium-White: #e2e2e2;
     --Tundora: #414141;
+    --Dark-charcoal: #333;
 }
 
 *,
@@ -45,8 +46,8 @@ body {
 }
 
 .btn-primary {
-    color: #fff;
-    background: --Liberty-Green;
+    color: var(--White);
+    background: var(--Liberty-Green);
 }
 
 .container {
@@ -56,18 +57,23 @@ body {
 }
 
 .btn-primary:hover {
-    background: #117964;
+    background: var(--Blue-Green);
     transition: background 0.3s ease-in-out;
 }
 
 /* Navbar style*/
 
+.nav input[type="checkbox"],
+.nav .hamburger-lines {
+    display: none;
+}
+
 .nav {
-    box-shadow: 0px 5px 10px 0px #aaa;
+    box-shadow: 0px 5px 10px 0px --Light-Gray;
     position: fixed;
     width: 100%;
-    background: #fff;
-    color: #000;
+    background: var(--White);
+    color: var(--Black);
     opacity: 0.85;
     height: 50px;
     z-index: 1;
@@ -100,7 +106,7 @@ body {
 
 .menu-items a {
     text-decoration: none;
-    color: #444;
+    color: var(--Dark-Gray);
     font-weight: bold;
     transition: color 0.3s ease-in-out;
 }
@@ -132,7 +138,7 @@ body {
 }
 
 .menu-items a:hover {
-    color: #117964;
+    color: var(--Blue-Green);
     transition: color 0.3s ease-in-out;
 }
 
@@ -145,7 +151,7 @@ body {
 /*About Section*/
 #About {
     padding: 50px 0;
-    background: #f5f5f7;
+    background: var(--Errigal-White);
 }
 
 .about-wrapper {
@@ -159,12 +165,12 @@ body {
 
 #About p {
     font-size: 17px;
-    color: #555;
+    color: var(--Dark-Gray2);
 }
 
 #About .small {
     font-size: 25px;
-    color: #666;
+    color: var(--Dark-Gray3);
     font-weight: bold;
 }
 
@@ -218,7 +224,7 @@ body {
     font-weight: bold;
     margin-bottom: 40px;
     text-transform: uppercase;
-    color: #555;
+    color: var(--Dark-Gray2);
 }
 
 .food-category {
@@ -253,7 +259,7 @@ body {
 }
 
 .img-content h3 {
-    color: #fff;
+    color: var(--White);
     font-size: 35px;
 }
 
@@ -297,7 +303,7 @@ body {
     font-weight: bold;
     margin-bottom: 40px;
     text-transform: uppercase;
-    color: #555;
+    color: var(--Dark-Gray2);
 }
 
 .food-menu {
@@ -321,7 +327,7 @@ body {
 .item-description p {
     font-weight: bold;
     font-size: 20px;
-    color: #555;
+    color: var(--Dark-Gray2);
 }
 
 
@@ -336,20 +342,20 @@ body {
 }
 
 .food-price {
-    color: #117964;
-    font-weight: bold;
+    color: var(--Blue-Green) !important;
+    font-weight: bold !important;
 }
 
 /*Testominals Section*/
 
 #Testimonials {
-    background: gray;
+    background: var(--White-Smoke);
     padding: 25px 0;
 }
 
 .test-title {
     text-align: center;
-    color: black;
+    color: var(--Dark-Gray2);
     font-weight: bold;
     font-size: 25px;
     margin-bottom: 25px;
@@ -380,16 +386,20 @@ body {
     margin: 10px;
 }
 
+span.fa.fa-star.checked {
+    color: var(--Deep-Saffron);
+}
+
 /*Contact Section*/
 
 #Contact {
-    background: lightblue;
+    background: var(--Titanium-White);
     padding: 5rem 0;
 }
 
 .contact-contaniner {
     display: flex;
-    background: white;
+    background: var(--White);
 }
 
 .left-contact {
@@ -421,11 +431,11 @@ textarea {
     width: 100%;
     padding: 15px 0;
     border: none;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid --Light-Gray;
     margin-bottom: 10px;
     font-size: 15px;
     font-weight: 400;
-    color: black;
+    color: var(--Dark-Gray);
     resize: none;
 }
 
@@ -444,12 +454,12 @@ footer#footer {
 }
 
 .footer-link {
-    color: black;
+    color: var(--Dark-Gray2);
     text-decoration: none;
 }
 
 .footer-link :hover {
-    color: green;
+    color: var(--Liberty-Green);
 }
 
 /* Responsive Style  */
@@ -539,7 +549,7 @@ footer#footer {
         height: 4px;
         width: 100%;
         border-radius: 10px;
-        background: #333;
+        background: var(--Dark-charcoal);
     }
 
     .menu .hamburger-lines .line1 {
@@ -558,7 +568,7 @@ footer#footer {
 
     .menu .menu-items {
         padding-top: 100px;
-        background: #fff;
+        background: var(--White);
         height: 100vh;
         max-width: 300px;
         transform: translate(-150%);
@@ -567,7 +577,7 @@ footer#footer {
         margin-left: -40px;
         padding-left: 50px;
         transition: transform 0.5s ease-in-out;
-        box-shadow: 5px 0px 10px 0px #aaa;
+        box-shadow: 5px 0px 10px 0px --Light-Gray;
     }
 
     .nav .menu-items li {
